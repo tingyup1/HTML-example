@@ -4,84 +4,112 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <style>
+
         body{
-               background-color: #f5f4dc;
-               background-image: url(Gray.jpg);
-               background-position-x: center;
-               background-position-y: center;
-               background-repeat: no-repeat;
-               background-size:1300px 900px;
-               margin: auto;
-      }
+        background-color: #f5f4dc;
+        background-image: url(Gray.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size:100%;
+        margin: auto;
+        display: block;
+    }
 
-        .menu {
-               font-family: Arial,sans-serif;
-               font-size: 1.3rem;
-               background-color:LightGray;
+
+       .header{
+                background: LightGray;
+                height: 70px;
+                line-height: 70px;
+
+        }
+        .logo{
+                 float: left;
+                margin-left:0%;
+                height: 70px;
+                background-color: Gray;
+                background-size: 80px 200px;
+
+
+        }
+        .logo h3{ font-family: Arial,sans-serif;
+                   font-size: 1.5rem;
+                   color: #f5fcfc;
+                   margin: auto;
+
+
+        }
+        .nav{
+                float: right;
+                margin-right: 10%;
+                color: black;
+                font-family: Arial,sans-serif;
+                font-size: 1.5rem;
+        }
+        .nav a{
+               margin-right: 70px;
+               text-decoration: none;
                color: black;
-               width: 1300px;
-               height: 70px;
-               position:absolute;
-               right: 250px;
-               top:1px;
-               text-align:right;
-               z-index: -1;
-    }
+        }
+        .nav  a:hover{background-color: coral}
 
-        a:hover{background-color: cadetblue}
 
-        h3{ background-color:Gray;
-            font-family: Arial,sans-serif;
-            font-size: 1.3rem;
-            color: black;
-            width: 200px;
-            height: 70px;
-            position:relative;
-            left: 250px;
-            bottom: 20px;
-            text-align: center;
-    }
-        .setbg{ position: relative;
+
+
+
+        .body{ position: relative;
                 left: 450px;
                 top: 100px;
-                margin: auto;
+
 
         }
         img{  position: relative;
-              left: 610px;
-              bottom:280px;
-               margin: auto;
+              text-align: center;
+              margin-left: 950px;
+              margin-top: 100px;
+              top:70%;
+
 
         }
-
-
-        h1{
+        .write{
+                position: fixed;
+        }
+        .write h1{
             font-family: Arial,sans-serif;
-            font-size: 3rem;
+            font-size: 3.5rem;
 
         }
-        p{
+        .write p{
             font-family: Arial,sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             color: black;
+            display: block;
         }
 
     </style>
 </head>
 <body>
-<h3>Site Logo</h3>
-<div class="menu">
-    <a href="my-page1.html" style="text-decoration: none;color: black">Home</a>
-    <a href="page2.html" style="text-decoration: none;color: black">Products</a>
-    <a href="page3.html" style="text-decoration: none;color: black">Contact</a>
+<div class="header">
+    <div class="logo">
+       <h3>Site Logo</h3>
     </div>
-<div class="setbg">
-<h1>Contact Us</h1>
+    <div class="nav">
+        <a href="my-page1.html" >Home</a>
+        <a href="page2.html" >Products</a>
+        <a href="page3.html" >Contact</a>
+    </div>
+</div>
+
+<div class="body">
+    <div class="write">
+    <h1>Contact Us</h1>
     <p>visit us at:<br>CompanyX<br>Karaportti 2<br>02340 ESPOO<br>
         Finland<br>Email:<b>info@metropolia.fi</b><br>
         Phone:<b>+358(0)401231233</b>
     </p>
-    <img src="logo.jpg" alt="Mtropolia logo" height="400" width="420">
+    </div>
 </div>
+   <img src="logo.jpg" alt="Mtropolia logo" height="400" width="420">
+
 </body>
 </html>
